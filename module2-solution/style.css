@@ -1,0 +1,78 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 3rem;
+  text-align: center;
+}
+
+article {
+  border: 2px solid black;
+  background-color: gray;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: Helvetica;
+  position: relative;
+}
+p {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+h4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Chicken {
+  background-color: indianred;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+.Beef {
+  background-color: brown;
+  color: white;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+.Sushi {
+  background-color: bisque;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.row {
+  width: 100%;
+}
+
+/********** the desktop view **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** the tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  section > article {
+    margin: 1rem;
+  }
+  .col-md-6 {
+    float: left;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-6:nth-child(3) {
+    width: 100%;
+  }
+}
